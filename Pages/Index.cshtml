@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Porównanie";
+}
+
+    <h1 class="display-4">Porównanie</h1>
+    <table>
+        <tr>
+            <th>Plik do porównania</th>
+            <td><input type="file" /></td>
+        </tr>
+        <tr>
+            <th>Adres repozytorium z plikami</th>
+            <td><input type="url" placeholder="0.0.0.0:445"/></td>
+        </tr>
+        <tr>
+            <th>Język pliku</th>
+            <td>
+            <select>
+                <option value="pl">Polski</option>
+                <option value="en">Angielski</option>
+                <option value="de">Niemiecki</option>
+                <option value="es">Hiszpański</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <th><input type="submit" value="Porównaj"/></th>
+        </tr>
+    </table>
